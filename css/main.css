@@ -55,6 +55,11 @@ body {
 
 /*header start*/
 
+.header{
+	padding-top: 15px;
+	margin-bottom: 2px;
+}
+
 .header-wrapper{
 	display: flex;
 	flex-wrap: wrap;
@@ -62,6 +67,8 @@ body {
 	margin: 0 auto;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 15px;
+
 }
 
 .header-home, .header-menu{
@@ -71,7 +78,7 @@ body {
 
 .header-logo{
 	width: 224px;
-	margin-top: 15px;
+
 }
 
 .header-logo-top{
@@ -82,7 +89,7 @@ body {
 	line-height: 41px;
 	color: #9A9A9A;
 	text-align: center;
-	
+
 }
 
 .header-logo-bottom{
@@ -117,9 +124,71 @@ body {
 	margin-right: 30px;
 }
 
+.header-item:last-child{
+	margin-right: 0;
+}
+
 .header-link{
 	text-decoration: none;
 	font-size: 18px;
 	line-height: 22px;
 	color: #433840;
+	transition: .3s all;
+}
+
+.header-link:hover, .header-link:focus, .header-link:active{
+	color: #FEA3AC;
+}
+
+
+
+
+/*slider start*/
+
+.slider-bg{
+	position: relative;
+	max-width: 100%;
+}
+
+.slider-thumb{
+	object-fit: cover;
+	height: 400px;
+	width: 100%;
+}
+
+.slider-thumb-top{
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+
+.slider-thumb-bottom{
+	position: absolute;
+	top: -1px;
+	left: 0;
+}
+
+.slider-desc{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.slider-title{
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 62px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.slider-text{
+	font-family: Waiting for the Sunrise, Arial;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 50px;
+	color: #FFFFFF;
 }
