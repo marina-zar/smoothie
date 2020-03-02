@@ -216,3 +216,51 @@ body {
 	line-height: 50px;
 	color: #FFFFFF;
 }
+
+
+
+
+/*intro start*/
+
+.intro-wrapper{
+	max-width: 1131px;
+	margin: auto;
+}
+
+.intro-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 36px;
+}
+
+.intro-grid-title{
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 37px;
+	color: #433840;
+	margin-bottom: 12px;
+	padding-left: 15px;
+}
+
+.intro-grid-desc{
+	margin-bottom: 80px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 24px;
+	color: #9A9A9A;
+	padding-left: 15px;
+}
+
+.intro-grid-text:last-child .intro-grid-desc{
+	padding-left: 0;
+	padding-right: 20px;
+}
+
+.intro-grid-text:last-child .intro-grid-title{
+	padding-left: 0;
+}
+
+.intro-grid-pic{
+	margin-top: 60px;
+}
