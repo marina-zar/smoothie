@@ -242,6 +242,12 @@ body {
 	padding-left: 10px;
 }
 
+/*.intro-grid-link{
+	display: block;
+	margin-bottom: 80px;
+	text-decoration: none;
+}*/
+
 .intro-grid-desc{
 	margin-bottom: 80px;
 	font-style: normal;
