@@ -230,7 +230,7 @@ body {
 .intro-grid{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 36px;
+	grid-gap: 40px;
 }
 
 .intro-grid-title{
@@ -239,7 +239,7 @@ body {
 	line-height: 37px;
 	color: #433840;
 	margin-bottom: 12px;
-	padding-left: 15px;
+	padding-left: 10px;
 }
 
 .intro-grid-desc{
@@ -247,14 +247,16 @@ body {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 15px;
-	line-height: 24px;
+	line-height: 160%;
 	color: #9A9A9A;
-	padding-left: 15px;
+	padding-left: 10px;
+	height: 75px;
+	overflow: hidden;
 }
 
 .intro-grid-text:last-child .intro-grid-desc{
 	padding-left: 0;
-	padding-right: 20px;
+	padding-right: 10px;
 }
 
 .intro-grid-text:last-child .intro-grid-title{
@@ -262,5 +264,9 @@ body {
 }
 
 .intro-grid-pic{
-	margin-top: 60px;
+	padding-top: 60px;
+}
+
+.intro-grid-text p:last-child{
+	margin-bottom: 0;
 }
