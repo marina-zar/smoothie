@@ -281,6 +281,10 @@ body {
 
 /*stats start*/
 
+.stats{
+	margin-bottom: 57px;
+}
+
 .stats-bg{
 	background-color: #FEA3AC;
 	height: 600px;
@@ -312,13 +316,65 @@ body {
 }
 
 .stats-stat{
-	max-width: 1180px;
+	width: 1180px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 20px;
 	margin: auto;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
-.stats-stat-item{
+.stats-stat-pic{
+	width: 135px;
+	height: 135px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 
+.stats-stat-numb{
+	text-align: center;
+	font-family: Waiting for the Sunrise;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 67px;
+	color: #DFEEB6;
+}
+
+.stats-stat-title{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 25px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+/*team start*/
+
+.team-title{
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 62px;
+	color: #433840;
+	text-align: center;
+}
+
+.team-desc{
+	font-family: Waiting for the Sunrise;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 50px;
+	color: #F7A1A8;
+	text-align: center;
+}
+
+.team-block{
+	max-width: 1143px;
+	display: grid;
 }
