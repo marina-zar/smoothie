@@ -356,6 +356,11 @@ body {
 
 /*team start*/
 
+.team{
+	margin-bottom: 150px;
+	width: 100%;
+}
+
 .team-title{
 	font-weight: bold;
 	font-size: 50px;
@@ -372,9 +377,80 @@ body {
 	line-height: 50px;
 	color: #F7A1A8;
 	text-align: center;
+	margin-bottom: 60px;
 }
 
 .team-block{
 	max-width: 1143px;
+	margin: auto;
 	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 24px;
+}
+
+/*.team-member{
+	height: 380px;
+}*/
+
+.team-member-pic{
+	border-radius: 50%;
+	position: absolute;
+	top: 25px;
+	left: -42%;
+	z-index: 2;
+
+}
+
+.team-member-card{
+	height: 380px;
+	width: 393px;
+	background-color: #C9E3F4;
+	padding: 84px 21px 83px 182px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.green{
+	background-color: #DFEEB6;
+}
+
+div.team-member-card.right{
+	margin: 0 0 0 auto;
+}
+
+.team-member-name{
+	display: block;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 37px;
+	color: #FFFFFF;
+}
+
+.team-member-prof{
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 25px;
+	color: #433840;
+	margin-bottom: 14px;
+}
+
+.team-member-text{
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 25px;
+	color: #433840;
+}
+
+img.team-member-pic.reverse{
+	left: 58%;
+}
+
+div.team-member-card.reverse{
+	left: 0;
+	padding: 84px 182px 83px 21px;
+}
+
+div.team-member-card.reverse p,
+div.team-member-card.reverse h3{
+	text-align: right;
 }
