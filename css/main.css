@@ -462,10 +462,9 @@ div.team-member-card.reverse h3{
 /*.footer start*/
 
 .footer-info{
-	background: url("../img/bg/footer-bg.png") no-repeat center center;
+	background: url("../img/bg/footer-bg.jpg") no-repeat center center;
 	background-size: cover;
     position: relative;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .footer-info-wrap{
@@ -474,12 +473,14 @@ div.team-member-card.reverse h3{
 
 .footer-info-wrap h3{
 	margin-bottom: 25px;
+	margin-top: 62px;
 }
 
 .footer-info-open,
 .footer-info-cont,
 .footer-info-insta{
 	flex: 1;
+	margin-bottom: 62px;
 }
 
 .footer-info-open-days,
@@ -489,28 +490,109 @@ div.team-member-card.reverse h3{
 	color: #fff;
 }
 
+
 p.footer-info-cont-item.bold{
 	font-weight: bold;
 }
 
 .footer-info-cont-link{
 	color: #fff;
+	transition: .3s all;
+}
+
+.footer-info-cont-link:hover, .footer-info-cont-link:active{
+	color: #F7A1A8;
+}
+
+p.footer-info-cont-item.tel::before{
+	content: "\f095";
+	font-family: FontAwesome;
+	color: #DFEEB6;
+	margin-right: 10px; 
+}
+
+
+p.footer-info-cont-item.email::before{
+	content: "\f064";
+	font-family: FontAwesome;
+	color: #DFEEB6;
+	margin-right: 10px;
+}
+
+p.footer-info-cont-item.address::before{
+	content: "\f041";
+	font-family: FontAwesome;
+	color: #DFEEB6;
+	margin-right: 10px; 
 }
 
 time{
 	color: #DFEEB6;
 }
 
+.footer-info-insta{
+	padding-left: 25px;
+}
+
+.footer-info-insta-title{
+	margin-left: 26px;
+}
+
 .footer-info-insta-grid{
-	max-width: 343px;
+	/*max-width: 369px;*/
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	padding-right: 0;
+}
+
+.footer-info-insta-link{
+	margin-bottom: 26px;
+	margin-left: 26px;
+}
+
+.footer-info-insta-link:hover img,
+.footer-info-insta-link:active img{
+	transform: scale(1.07);
 }
 
 .footer-info-insta-item{
+	display: block;
 	border-radius: 5px;
 	width: 97px;
 	height: 97px;
-	margin-bottom: 26px;
+	transition: .3s all;
+}
+
+
+
+/*.footer-copir-icon::before{
+	content: '\f082 \f16a \f16d \f099';
+	font-family: FontAwesome;
+	color: #DFEEB6;
+	margin-right: 10px; 
+}*/
+
+.footer-copir .wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-copir{
+	background-color: #433840;
+}
+
+.footer-copir-desc{
+	/*display: block;*/
+	color: #fff;
+	padding: 13px 0 13px 0;
+	font-size: 15px;
+	line-height: 35px;
+}
+
+.footer-copir-icon a{
+	text-decoration: none;
+	color: #DFEEB6;
+	margin-left: 12px;
 }
