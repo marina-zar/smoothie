@@ -51,7 +51,7 @@ h3 {
 .wrapper{
 	max-width: 1143px;
 	margin: auto;
-	/*padding: 0 15px;*/
+	padding: 0 15px;
 }
 
 .wrapper-xl{
@@ -59,6 +59,9 @@ h3 {
 	margin: auto;
 	/*padding: 0 15px;*/
 }
+
+
+
 
 /*header start*/
 
@@ -75,10 +78,10 @@ h3 {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 15px;
-
 }
 
-.header-home, .header-menu{
+.header-home,
+.header-menu{
 	flex: 1;
 	max-width: 300px;
 }
@@ -88,7 +91,8 @@ h3 {
 }
 
 .header-logo:hover .header-logo-bottom {
-	text-shadow: 0 0 4px #FEA3AC, 0 0 4px #FEA3AC, 0 0 4px #FEA3AC, 0 0 4px #FEA3AC, 0 0 4px #FEA3AC, 0 0 4px #FEA3AC;
+	text-shadow: 0 0 4px #FEA3AC, 0 0 4px #FEA3AC,
+	0 0 4px #FEA3AC, 0 0 4px #FEA3AC, 0 0 4px #FEA3AC, 0 0 4px #FEA3AC;
 }
 
 .header-logo-top{
@@ -99,7 +103,6 @@ h3 {
 	line-height: 41px;
 	color: #9A9A9A;
 	text-align: center;
-
 }
 
 .header-logo-bottom{
@@ -110,8 +113,6 @@ h3 {
 	line-height: 37px;
 	letter-spacing: 10px;
 	text-align: center;
-	/*-webkit-text-stroke: 1px #FEA3AC;*/
-    /*-webkit-text-fill-color: white;*/
     text-shadow: 0 0 2px #FEA3AC, 0 0 2px #FEA3AC, 0 0 2px #FEA3AC, 0 0 2px #FEA3AC, 0 0 2px #FEA3AC, 0 0 2px #FEA3AC;
     color: #fff;
     transition: .4s all;
@@ -126,7 +127,6 @@ h3 {
 
 .header-menu > .header-list{
 	justify-content: flex-end;
-
 }
 
 .header-item{
@@ -146,7 +146,9 @@ h3 {
 	transition: .3s all;
 }
 
-.header-link:hover, .header-link:focus, .header-link:active{
+.header-link:hover, 
+.header-link:focus, 
+.header-link:active{
 	color: #FEA3AC;
 }
 
@@ -248,12 +250,6 @@ h3 {
 	padding-left: 10px;
 }
 
-/*.intro-grid-link{
-	display: block;
-	margin-bottom: 80px;
-	text-decoration: none;
-}*/
-
 .intro-grid-desc{
 	margin-bottom: 80px;
 	font-style: normal;
@@ -282,6 +278,9 @@ h3 {
 .intro-grid-text p:last-child{
 	margin-bottom: 0;
 }
+
+
+
 
 
 /*stats start*/
@@ -321,7 +320,7 @@ h3 {
 }
 
 .stats-stat{
-	width: 1180px;
+	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 20px;
@@ -358,11 +357,15 @@ h3 {
 	text-align: center;
 }
 
+
+
+
 /*team start*/
 
 .team{
 	margin-bottom: 150px;
 	width: 100%;
+	padding: 0 15px;
 }
 
 .team-title{
@@ -393,15 +396,6 @@ h3 {
 }
 
 
-.team-member-pic{
-	border-radius: 50%;
-	position: absolute;
-	top: 25px;
-	left: -42%;
-	z-index: 2;
-
-}
-
 .team-member-card{
 	height: 380px;
 	width: 393px;
@@ -409,6 +403,14 @@ h3 {
 	padding: 84px 21px 83px 182px;
 	border-radius: 5px;
 	position: relative;
+}
+
+.team-member-pic{
+	border-radius: 50%;
+	position: absolute;
+	top: 25px;
+	left: -42%;
+	z-index: 2;
 }
 
 .green{
@@ -444,7 +446,6 @@ div.team-member-card.right{
 
 img.team-member-pic.reverse{
 	left: 58%;
-
 }
 
 div.team-member-card.reverse{
@@ -456,6 +457,7 @@ div.team-member-card.reverse p,
 div.team-member-card.reverse h3{
 	text-align: right;
 }
+
 
 
 
@@ -500,7 +502,8 @@ p.footer-info-cont-item.bold{
 	transition: .3s all;
 }
 
-.footer-info-cont-link:hover, .footer-info-cont-link:active{
+.footer-info-cont-link:hover, 
+.footer-info-cont-link:active{
 	color: #F7A1A8;
 }
 
@@ -539,7 +542,6 @@ time{
 }
 
 .footer-info-insta-grid{
-	/*max-width: 369px;*/
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -565,14 +567,6 @@ time{
 }
 
 
-
-/*.footer-copir-icon::before{
-	content: '\f082 \f16a \f16d \f099';
-	font-family: FontAwesome;
-	color: #DFEEB6;
-	margin-right: 10px; 
-}*/
-
 .footer-copir .wrapper{
 	display: flex;
 	justify-content: space-between;
@@ -584,7 +578,6 @@ time{
 }
 
 .footer-copir-desc{
-	/*display: block;*/
 	color: #fff;
 	padding: 13px 0 13px 0;
 	font-size: 15px;
@@ -595,4 +588,79 @@ time{
 	text-decoration: none;
 	color: #DFEEB6;
 	margin-left: 12px;
+	transition: .3s all;
+}
+
+.footer-copir-icon a:hover,
+.footer-copir-icon a:active{
+	color: #F7A1A8;
+}
+
+
+
+
+/* media start*/
+
+@media screen and (max-width: 1150px){
+
+		.team-member.one{
+			grid-column-start: 1;
+			grid-column-end: 3;
+			grid-row-start: 1;
+   			grid-row-end: 2;
+	}
+
+	.team-member.two{
+			grid-column-start: 1;
+			grid-column-end: 3;
+			grid-row-start: 3;
+   			grid-row-end: 4;
+	}
+
+			.team-member.three{
+			grid-column-start: 1;
+			grid-column-end: 3;
+			/*grid-row-start: 3;
+   			grid-row-end: 4;*/
+	}
+
+}
+
+
+@media screen and (max-width: 1050px){
+	.intro-grid-title{
+		font-size: 26px;
+		line-height: 32px;
+	}
+}
+
+
+@media screen and (max-width: 900px){
+
+	.slider {
+    margin-bottom: 50px;
+}
+	
+	.intro-grid-title{
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.intro-grid-desc{
+		margin-bottom: 40px;
+	}
+
+	.team{
+		margin-bottom: 80px;
+	}
+
+	.footer-info-wrap h3{
+		font-size: 26px;
+		line-height: 35px;
+	}
+
+	.footer-info-wrap p{
+		font-size: 16px;
+		line-height: 35px
+	}
 }
