@@ -51,7 +51,7 @@ h3 {
 .wrapper{
 	max-width: 1143px;
 	margin: auto;
-	padding: 0 15px;
+
 }
 
 .wrapper-xl{
@@ -239,9 +239,15 @@ h3 {
 
 .intro-grid{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 40px;
 }
+
+.intro-grid-text,
+.intro-grid-pic{
+	grid-column: span 2;
+}
+
 
 .intro-grid-title{
 	font-weight: normal;
@@ -320,6 +326,7 @@ h3 {
 }
 
 .stats-stat{
+	max-width: 1143px;
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -471,6 +478,7 @@ div.team-member-card.reverse h3{
 
 .footer-info-wrap{
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .footer-info-wrap h3{
@@ -603,7 +611,13 @@ time{
 
 @media screen and (max-width: 1150px){
 
-		.team-member.one{
+
+	.wrapper,
+	.stats-bg{
+		padding: 0 15px;
+	}
+
+	.team-member.one{
 			grid-column-start: 1;
 			grid-column-end: 3;
 			grid-row-start: 1;
@@ -632,13 +646,17 @@ time{
 		font-size: 26px;
 		line-height: 32px;
 	}
+
+	.footer-info-wrap p{
+		font-size: 18px;
+	}
 }
 
 
 @media screen and (max-width: 900px){
 
 	.slider {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 	
 	.intro-grid-title{
@@ -650,17 +668,98 @@ time{
 		margin-bottom: 40px;
 	}
 
+	.stats{
+		margin-bottom: 20px;
+	}
+
 	.team{
 		margin-bottom: 80px;
 	}
 
+	.team-desc{
+		margin-bottom: 30px;
+	}
+
 	.footer-info-wrap h3{
 		font-size: 26px;
-		line-height: 35px;
 	}
 
 	.footer-info-wrap p{
 		font-size: 16px;
-		line-height: 35px
+	}
+
+	.footer-info-insta{
+		margin-bottom: 20px;
+	}
+}
+
+
+
+@media screen and (max-width: 800px){
+	.stats-stat-pic{
+		width: 110px;
+		height: 110px;
+	}
+
+	.stats-stat-numb{
+		font-size: 50px;
+	}
+
+	.stats-stat-title{
+		font-size: 16px;
+	}
+
+	.footer-info-wrap h3,
+	.footer-info-wrap p{
+		text-align: center;
+	}
+
+	.footer-info-open,
+	.footer-info-cont{
+		flex-basis: 50%;
+		margin-bottom: 0;
+	
+	}
+
+	.footer-info-insta{
+		padding-left: 0;
+	}
+
+	.footer-info-insta-grid{
+		justify-content: center;
+	}
+
+	.footer-info-insta-item{
+		width: 85px;
+		height: 85px;
+	}
+
+	.footer-info-insta-link:first-child,
+	.footer-info-insta-title{
+		margin-left: 0;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 720px){
+	
+	.intro-grid-pic{
+		display: none;
+	}
+
+	.intro-grid-text{
+	grid-column: span 3;
+	}
+
+	.footer-info-insta-grid{
+		width: 380px;
+		margin: 0 auto;
+	}
+
+	.footer-info-insta-link:first-child{
+		margin-left: 26px;
 	}
 }
